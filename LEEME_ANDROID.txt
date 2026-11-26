@@ -1,0 +1,17 @@
+lataM para Android
+
+Sin juego (por defecto): el APK abre un selector que lista los .lataM encontrados en
+Download o en Android/data/org.latino.latam/files. Copia un .lataM ahi y reinicia la app.
+
+Con juego incluido (opcional):
+1. Crea la carpeta juego/ en la raiz del repositorio, con principal.lat, conf.lat
+   (opcional) y tus assets/ (images, audio, fonts).
+2. Sube el repositorio a GitHub.
+3. Actions -> "APK lataM" -> Run workflow.
+   Si existe juego/, el flujo lo empaqueta en juego.lataM y lo mete en el APK.
+   Si no existe, el APK se construye igual, sin juego.
+
+Notas:
+- Para cambiar el nombre o el paquete, edita buildozer.spec.
+- Los toques funcionan como clics del raton.
+- El guardado (clicks.txt, peluche.txt) va al almacenamiento privado de la app.
